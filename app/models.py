@@ -130,7 +130,7 @@ class Usuarios(metaUsuarios):
             self.status=200
                 
 
-            return self.respuesta[0], self.status
+            return self.respuesta, self.status
     
         except KeyError:
             self.respuesta={"status":"failed","mensaje":"Debe actualizar los campos"}
